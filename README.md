@@ -1,0 +1,1 @@
+This is my first webpage using strictly HTML and CSS I am excited to do a write up here soon on the skills I applied and all that I learned while developing this project.
