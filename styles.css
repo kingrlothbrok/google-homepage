@@ -1,0 +1,83 @@
+/* General Effects */
+
+body {
+  font-family: arial, sans-serif;
+  background-color: white;
+}
+
+/* Nav Bar Effects */
+
+.nav-flex-container {
+  display: flex;
+  flex-direction: space-between;
+
+  padding: 10px;
+
+  position: fixed; /* to position at the top */
+  width: 100%;
+  left: 0px;
+  top: 0px;
+
+  border: 2px solid red; /* DELETE LATER */
+}
+
+.nav-flex-container a { /* cannot apply to li. must apply separetly bc are links on G.*/
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.nav-flex-child-1 {
+  flex-grow: 1;
+  display: flex; /* To align text in middle */
+  align-items: center;
+
+  border: 2px solid blue; /* DELETE LATER */
+}
+
+.nav-flex-child-2 {
+  flex-grow: 1;
+  padding-right: 15px; /* Space from the edge */
+
+  border: 2px solid blue; /* DELETE LATER */
+}
+
+/* Navigation Bar Links */
+
+.nav-bar-left {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.nav-bar-right {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  text-align: right;
+}
+
+.nav-flex-container li {
+  display: inline-block;
+
+  padding: 5px;
+  margin: 0 5px;
+
+  color: #222222;
+  font-size: 14px;
+}
+
+  .nav-flex-container li:hover {
+    text-decoration: underline;
+  }
+
+
+
+
+.google-logo {
+        margin: 0 auto;
+        width: 80%;
+        max-width: 270px;
+        display: block;
+    }
