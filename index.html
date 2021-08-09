@@ -14,7 +14,7 @@
 
     <!-- Media Share Metatags -->
 
-    <meta property='og-title' content='Google Homepage - Braxton Wright - The Odin Project'>
+    <meta property= 'og:title' content='Google Homepage - Braxton Wright - The Odin Project'>
     <meta property='og-image' content='https://images.pexels.com/photos/2543201/pexels-photo-2543201.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'>
     <meta property='og:description' content='The Google Homepage by Braxton Wright - TOP'>
     <meta property='og:url' content='https://github.com/kingrlothbrok/google-homepage'>
@@ -43,7 +43,7 @@
                 <ul class="nav-bar-right">
                   <li> <a href=""> Gmail </a> </li>
                   <li> <a href=""> Images </a> </li>
-                  <li> <a href=""> <i class="material-icons"> apps </i> </a> </li>
+                  <li> <a href=""> <i class="material-icons" id="apps-icon"> apps </i> </a> </li>
                   <li> <a href=""> <img src="Assets/user-profile-photo.png"class="user-profile-icon" alt="user-profile-icon"> </a> </li>
                 </ul>
              </div>
@@ -55,20 +55,78 @@
 
 
 
-    
+<!-- Main Content -->    
     <main>  
         <div class="grid-box-container">
 
             <!-- Row 1 - Google logo -->
-            <div class="grid-row-one">
+            <div class="grid-first-row">
                 <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+
+
+            <!-- Row 2 - Search Icon -->
+            <div class="grid-second-row-search-icon search-icon">
+                <i class="material-icons id="google-search-icon"> search </i>
+
+            </div>
+
+            <!-- Row 2 - Search Bar Text Input -->
+            <div class="grid-second-row">
+                <input class="search-bar" id="search-bar" type="text" autofocus> <!-- Autofocus Loads Blinker in the Search Bar-->
+            </div>
+
+            <!-- Row 3 - Button 1 -->
+            <div class="grid-third-row-first-button">
+                <input class="first-button" type="submit" value="Google Search">
+            </div>
+
+            <!-- Row 3 - Button 2 -->
+            <div class="grid-third-row-second-button">
+                <input class="second-button" type="submit" value="I'm Feeling Lucky">
+            </div>
+
+             <!-- Row 4 -  Olympics Update Offering -->
+             <div class="grid-fourth-row">
+                 <a class="olympic-update-link grid-fourth-row" href=""> Stay updated on the Olympics with Google </a>
+            </div>
 
         </div> <!-- Close - Grid Box Container-->
 
-         <div>
-             
-        </div>
+
+<!-- Bottom Tray -->
+
+
+<div class="tray-flex-container">
+
+    <div class="tray-flex-child-1">
+       <ul class="tray-bar-left">
+        <li> <a href=""> Advertising </a> </li>
+        <li> <a href=""> Business </a> </li>
+        <li> <a href=""> How Search Works </a> </li>
+       </ul>
+    </div>
+
+
+    <div class="tray-flex-child-2">
+        <ul class="tray-bar-middle">
+          <li> <a href=""> Carbon neutral since 2007 </a> </li>
+        </ul>
+     </div>
+
+
+    <div class="tray-flex-child-3">
+        <ul class="tray-bar-right">
+          <li> <a href=""> Privacy </a> </li>
+          <li> <a href=""> Terms </a> </li>
+          <li> <a href=""> Settings </a> </li>
+        </ul>
+     </div>
+
+
+    </div>
+
     </main>
+
 </body>
 
 <!-- Footer -->

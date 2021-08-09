@@ -9,16 +9,14 @@ body {
 
 .nav-flex-container {
   display: flex;
-  flex-direction: space-between;
+  justify-content: space-between;
 
-  padding: 10px;
+  padding: 5px 13px 0px 14px;
 
   position: fixed; /* to position at the top */
   width: 100%;
   left: 0px;
   top: 0px;
-
-  border: 2px solid red; /* DELETE LATER */
 }
 
 .nav-flex-container a { /* cannot apply to li. must apply separetly bc are links on G.*/
@@ -31,15 +29,11 @@ body {
   flex-grow: 1;
   display: flex; /* To align text in middle */
   align-items: center;
-
-  border: 2px solid blue; /* DELETE LATER */
 }
 
 .nav-flex-child-2 {
   flex-grow: 1;
   padding-right: 15px; /* Space from the edge */
-
-  border: 2px solid blue; /* DELETE LATER */
 }
 
 /* Navigation Bar Links */
@@ -72,12 +66,259 @@ body {
     text-decoration: underline;
   }
 
+/* Grid box container */
+
+.grid-box-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 2fr 1fr 1fr 1fr;
+
+  gap: 20px; /* Spacing between rows */
+  margin: auto; /* Centers Google container */
+  margin-top: 150px; /* Adss spacing from nav bar width */
+  width: 700px; /* Master width for determining all elements within */
+  padding: 10px;
+}
+
+.grid-first-row {
+  grid-column: 1/5;
+  grid-row: 1;
+}
+
+.grid-second-row-search-icon {
+  grid-column: 1;
+  grid-row: 2;
+  z-index: 2; /* So search bar doesn't cover search icon */
+
+  border: 2px solid blue; /* To Delete */
+}
+
+.grid-second-row {
+  grid-column: 1/5;
+  grid-row: 2;
+  position: relative;
+
+  border: 2px solid rgb(0, 204, 255);
+}
+
+.grid-third-row-first-button {
+  grid-column: 2/3;
+  grid-row: 3;
+  margin: auto;
+  width: 50%;
+  padding-top: 25px;
+
+}
+
+.grid-third-row-second-button {
+  grid-column: 3/4;
+  grid-row: 3;
+  margin: auto;
+  width: 0%;  ;
+
+  border: 2px solid blue; /* To Delete */
+}
+
+.grid-fourth-row {
+  grid-column: 2/4;
+  grid-row: 4;
+}
 
 
+
+/* Row 1 Contents */
 
 .google-logo {
-        margin: 0 auto;
-        width: 80%;
-        max-width: 270px;
-        display: block;
+  margin: auto;
+  width: 80%;
+  max-width: 270px;
+  display: block;
+}
+
+/* Row 2 Contents */
+
+.search-icon {
+  display: block;
+  margin-left: 20px;
+  margin-top: 10px;
+  z-index: 1;
+  position: absolute;
+}
+
+.search-bar {
+  width: 80%;
+  height: 2.5rem;
+  padding: 0.25rem 4rem; /* Top-Bottom and Left-Right to give space for icon */
+  border: 1px solid dfele5;
+  border-radius: 1.8rem;
+
+  display: block;
+  margin: 0 auto;
+}
+
+.search-bar:hover {
+  filter: drop-shadow(4px 5px 5px dfele5);
+}
+
+/* Row 3 Contents */
+
+.first-button {
+  width: 145px;
+  height: 40px;
+  background: #f8f8fa;
+
+  border-radius: 3px;
+  border-style: none;
+  cursor: pointer;
+
+  display: block; /* To position button */
+  margin-left: 20px;
+}
+
+  .first-button:hover {
+    border: 2px solid darkgray;
+  }
+
+  .first-button:visited {
+    border: 2px solid #42854f
+  }
+
+
+  .second-button {
+    width: 145px;
+    height: 40px;
+    background: #f8f8fa;
+  
+    border-radius: 3px;
+    border-style: none;
+    cursor: pointer;
+  
+    display: block; /* To position button */
+    margin-left: 5px;
+    margin-block: -43px;
+
+  }
+  
+    .second-button:hover {
+      border: 2px solid darkgray;
     }
+  
+    .second-button:visited {
+      border: 2px solid #42854f
+    }
+
+
+/* Row 4 Content */
+
+.grid-fourth-row {
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+
+  padding-top: 10px;
+}
+
+  .grid-fourth-row a:hover {
+    text-decoration: underline;
+  }
+
+  .grid-fourth-row a:visited {
+    text-decoration: none;
+    color: blue;
+  }
+
+/* Bottom Tray */
+
+.tray-flex-container {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 8px; /* Makes bar thicker */
+
+  position: fixed; /* Position at bottom */
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+
+  background-color: #f2f2f2;
+
+  border: 2px solid yellow; /* Delete later */
+}
+
+    .tray-flex-container a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+
+    .tray-flex-child-1 {
+      flex-grow: 1;
+      
+      margin-left: 10px; /* Spacing from the edge */
+    
+      border: 2px solid blue; /* DELETE LATER */
+    }
+    
+    .tray-flex-child-2 {
+      flex-grow: 1.5;
+      align-items: flex-end;
+       /* Space from the edge */
+    
+      border: 2px solid blue; /* DELETE LATER */
+    }
+
+    .tray-flex-child-3 {
+      flex-grow: 1;
+       /* Space from the edge */
+      margin-left: 100px;
+      border: 2px solid blue; /* DELETE LATER */
+    }
+    /* Navigation Bar Links */
+    
+    .tray-bar-left {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+
+    .tray-bar-middle {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+
+    .tray-bar-right {
+      list-style-type: none;
+      margin: auto;
+      padding: 0px;
+      text-align: center;
+    }
+    
+    .tray-flex-container li {
+      display: inline-block;
+    
+      padding: 5px 10px; /* top-bottom and left-right */
+      margin: 0 5px;
+    
+      color: #717171;
+      font-size: 14px;
+    }
+    
+      .nav-flex-container li:hover {
+        text-decoration: underline;
+      }
+    
+    
+/* Icons */
+
+#apps-icon {
+  vertical-align: middle;
+}
+
+.user-profile-icon {
+  vertical-align: middle;
+}
+
+#google-search-icon
